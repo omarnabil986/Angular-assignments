@@ -1,0 +1,4 @@
+<p *ngIf="userId">User ID: {{ userId }}</p>
+<p *ngIf="userRole">Role: {{ userRole }}</p>
+<p *ngIf="userId && userRole">User {{ userId }} has the role of {{ userRole }}.</p>
+<p *ngIf="!userRole">Role not specified.</p>

@@ -1,0 +1,8 @@
+<div>
+  <h2>Temperature Controller</h2>
+  <button (click)="decreaseTemperature()">-</button>
+  <span>{{ temperature }}°C</span>
+  <button (click)="increaseTemperature()">+</button>
+
+  <app-temperature-display [temperature]="temperature"></app-temperature-display>
+</div>

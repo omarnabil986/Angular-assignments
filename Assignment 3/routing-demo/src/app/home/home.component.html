@@ -1,0 +1,13 @@
+<!-- <h2>Home Page</h2>
+<p>Select a user:</p>
+<ul>
+  <li><a [routerLink]="['/user', 1]">User 1</a></li>
+  <li><a [routerLink]="['/user', 2]">User 2</a></li>
+  <li><a [routerLink]="['/user', 3]">User 3</a></li>
+</ul> -->
+
+<nav>
+  <a routerLink="/user/1" [queryParams]="{ role: 'admin' }">User 1 - Admin</a>
+  <a routerLink="/user/2" [queryParams]="{ role: 'user' }">User 2 - User</a>
+  <a routerLink="/user/3" [queryParams]="{ role: 'guest' }">User 3 - Guest</a>
+</nav>

@@ -1,0 +1,18 @@
+<div>
+  <h2>Todo List</h2>
+
+  <!-- Add Task -->
+  <input #taskInput type="text" placeholder="Enter a task" />
+  <button (click)="addTask(taskInput.value); taskInput.value=''">Add Task</button>
+
+  <!-- Task List -->
+  <ul>
+    <li *ngFor="let task of tasks; let i = index">
+      {{ task }}
+      <button (click)="removeTask(i)">Remove</button>
+    </li>
+  </ul>
+
+  <!-- Last Action -->
+  <p *ngIf="lastAction">{{ lastAction }}</p>
+</div>

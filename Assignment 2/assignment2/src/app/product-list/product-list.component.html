@@ -1,0 +1,4 @@
+<h2>Product List</h2>
+<div *ngFor="let Product of products">
+  <app-product-card [product]="Product" (buyProduct)="onProductBought($event)"></app-product-card>
+</div>

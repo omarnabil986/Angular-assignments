@@ -1,0 +1,8 @@
+<div class="message-display">
+  <h2>Reverse Text Example</h2>
+  <label for="message-input">Enter a message:</label>
+  <input id="message-input" type="text" [(ngModel)]="message" placeholder="Type your message here" />
+  <p>
+    <strong>Reversed Message:</strong> {{ message | reverseText }}
+  </p>
+</div>
